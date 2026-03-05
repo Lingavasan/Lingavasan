@@ -2,7 +2,7 @@
 
 # Lingavasan Suresh Kumar
 
-### Data Engineer · AI/ML Engineer · LLM Systems · Applied Research
+### Data Engineer · AI/ML Engineer · LLM Systems · AI Researcher · Data Scientist
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Building+reliable+data+systems+%26+production-grade+AI;Agent+memory+%7C+optimization+%7C+multi-cloud+sustainability;Engineering+discipline+meets+research+curiosity)](https://git.io/typing-svg)
 
