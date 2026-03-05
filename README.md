@@ -123,32 +123,50 @@ Joined as the **first (founding) ML/AI engineer** to build the AI layer of an ea
 
 ## 🔬 Research (Thesis)
 
-### Policy-Driven Memory Management Architecture for Autonomous Agent Systems
+### MemoryArchitect: Policy-Driven Memory Governance for LLM Agent Systems
 **Arizona State University (ASU) · Jul 2025 – Present**
 
-> Most agentic LLM systems fail quietly in long-horizon tasks because memory grows without control, retrieval becomes noisy, context limits force poor tradeoffs, and naïve Top-K retrieval fetches "similar" but not "useful" content. The real challenge isn't "retrieve more." It's *decide what matters now, under budget, while preserving coherence across time.*
+> Most agentic LLM systems fail quietly in long-horizon tasks: either the full chat history is stuffed into the prompt until the context window breaks, or naïve RAG retrieves *similar* but not *useful* content, silently averaging conflicting facts into hallucinations. The real problem is not "retrieve more." It is *govern what enters memory, how long it survives, what gets retrieved, and how contradictions are resolved—all under hard token budgets, without retraining the model.*
 
-**What I'm building**
+**What I built**
 
-A policy-driven cognitive memory layer for LLM agents that replaces naïve retrieval with adaptive, budget-constrained retrieval — an *operating system for agent memory*:
+**MemoryArchitect** is a model-agnostic, external memory governance layer for LLM agents that treats memory as a **constrained, auditable resource** rather than a passive log. The same governance engine can harden many different agent systems in real settings—no base-model retraining required.
 
-| Component | Role |
+| Governance Stage | What It Controls |
 |---|---|
-| Memory ingestion | What gets stored |
-| Memory decay | What fades and why |
-| Memory consolidation | What becomes durable |
-| Memory arbitration | What gets selected for context |
-| Evaluation harnesses | Measures stability under stress |
+| **Write policy** | What gets stored — filters noise, duplicates, and injection attempts at ingest time |
+| **Metadata & provenance** | Each memory item is tagged with trust score, time scope, sensitivity level, and source |
+| **TTL / decay** | When memories expire or fade — configurable forgetting behavior per memory type |
+| **Episodic → semantic consolidation** | How recent traces are compressed into durable, compact summaries |
+| **Retrieval eligibility** | What is *allowed* to be retrieved — policy-gated, not just similarity-ranked |
+| **Contradiction detection** | Conflicting facts are flagged and resolved before reaching the prompt |
+| **Token budget arbitration** | Memory items compete for context slots by benefit-per-token under a hard window constraint |
+| **Compliance layer** | Right-to-be-forgotten deletion cascades; toxic/injection-resistant "don't store this" rules |
 
 **Core Technical Ideas**
 
-- **Adaptive retrieval under fixed window constraints** — Policy that weighs *similarity* (semantic relevance) × *decay* (time and persistence) × *utility* (task value / expected contribution).
-- **Retrieval auction concept** — Memory items compete for inclusion via a mathematically grounded scoring function with explicit budget constraints (token limits treated like compute limits).
-- **Lifecycle memory engine** — Dynamic store where items decay, consolidate, get suppressed (noise), or promoted (consistent contributors).
+- **Governance-first memory** — Explicit, configurable policies govern every stage of the memory lifecycle: write, store, decay, consolidate, retrieve, and resolve. No implicit "just embed and retrieve."
+- **Contradiction handling** — Conflicting facts are detected via semantic similarity + logical consistency checks and resolved (most recent / highest trust wins) before context assembly, preventing the agent from hallucinating averaged facts.
+- **Benefit-per-token budgeting** — At runtime, the system ranks policy-eligible memory items by expected task contribution divided by token cost, packs the context window to the hard limit, compresses when needed, and logs every decision for transparency and debugging.
+- **Provenance & auditability** — Every stored item carries metadata (source, timestamp, trust score, sensitivity). Every memory action—write, decay, eviction, retrieval—is logged, making agent behavior inspectable and debuggable.
+- **Compliance-ready** — Deletion cascades propagate right-to-be-forgotten requests across the memory store. Write-time rules block toxic content and prompt-injection patterns from entering memory at all.
 
-**Evaluation philosophy** — measure token efficiency vs. task performance using Ragas-style harnesses; identify failure modes (forgetting, repetition, drift, contradiction); stress-test under perturbations; test multi-step coherence and tool-use reliability.
+**Initial Evaluation Results**
 
-**AGI relevance** — long-horizon reasoning requires memory that is controlled, auditable, and useful. Agents need policies—not heuristics—for recall. Scalable intelligence is fundamentally a resource allocation problem.
+> Our governance engine outperformed most existing memory baselines on long-horizon recall, persona consistency, and contradiction rate — while holding **context window utilization below 47%**, demonstrating that tighter memory governance, not larger context windows, is the path to cost- and latency-efficient agentic systems.
+
+**Impact**
+
+| Dimension | Outcome |
+|---|---|
+| 💰 Cost & latency | Fewer tokens per turn via aggressive budgeting — sub-47% window utilization |
+| 🧠 Long-horizon recall | Episodic consolidation preserves key facts across extended multi-step tasks |
+| 🎯 Persona consistency | Policy-enforced identity traces prevent agent drift over long conversations |
+| 🚫 Hallucination reduction | Contradiction resolution stops conflicting facts from reaching the model |
+| 🔒 Deployable compliance | Right-to-be-forgotten + injection-resistant write rules, production-ready |
+| 🔌 Model-agnostic | Governance layer is decoupled from the base model — hardens any LLM agent stack |
+
+**AGI relevance** — Scalable general-purpose intelligence requires memory that is controlled, auditable, and useful. Agents need governance policies—not retrieval heuristics—for reliable recall. Resource allocation under hard constraints is a foundational problem for any long-horizon reasoning system.
 
 `Python` `LangChain` `LangGraph` `OpenAI Models` `Hugging Face` `Transformers` `RAG` `Pinecone` `LanceDB` `Ragas` `n8n` `MLflow` `Vector Databases` `Prompt & Context Management`
 
