@@ -153,18 +153,18 @@ Joined as the **first (founding) ML/AI engineer** to build the AI layer of an ea
 
 **Initial Evaluation Results**
 
-> Our governance engine outperformed most existing memory baselines on long-horizon recall, persona consistency, and contradiction rate — while holding **context window utilization below 47%**, demonstrating that tighter memory governance, not larger context windows, is the path to cost- and latency-efficient agentic systems.
+> Our governance engine outperformed most existing memory baselines across long-horizon recall, persona consistency, and contradiction rate. Crucially, **context window utilization stayed below 47% at all times**—even across arbitrarily long conversations—demonstrating that tighter memory governance, not larger context windows, is the path to cost- and latency-efficient agentic systems that maintain long-term conversations perfectly.
 
 **Impact**
 
 | Dimension | Outcome |
 |---|---|
-| 💰 Cost & latency | Fewer tokens per turn via aggressive budgeting — sub-47% window utilization |
-| 🧠 Long-horizon recall | Episodic consolidation preserves key facts across extended multi-step tasks |
-| 🎯 Persona consistency | Policy-enforced identity traces prevent agent drift over long conversations |
-| 🚫 Hallucination reduction | Contradiction resolution stops conflicting facts from reaching the model |
-| 🔒 Deployable compliance | Right-to-be-forgotten + injection-resistant write rules, production-ready |
-| 🔌 Model-agnostic | Governance layer is decoupled from the base model — hardens any LLM agent stack |
+| 💰 Cost & latency | Token usage held **below 47% of the context window at all times**, reducing per-turn cost and inference latency |
+| 🧠 Long-term conversation quality | Episodic consolidation + contradiction resolution enables **perfect long-term conversation maintenance** across extended multi-turn conversations |
+| 🎯 Persona consistency | Policy-enforced identity traces prevent agent drift over extended, multi-session conversations |
+| 🚫 Hallucination reduction | Contradiction resolution stops conflicting facts from reaching the model — no more "averaged" hallucinations |
+| 🔒 Deployable compliance | Right-to-be-forgotten + injection-resistant write rules, production-ready out of the box |
+| 🔌 Model-agnostic | Governance layer is fully decoupled from the base model — the same engine hardens any LLM agent stack |
 
 **AGI relevance** — Scalable general-purpose intelligence requires memory that is controlled, auditable, and useful. Agents need governance policies—not retrieval heuristics—for reliable recall. Resource allocation under hard constraints is a foundational problem for any long-horizon reasoning system.
 
