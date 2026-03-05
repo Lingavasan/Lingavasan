@@ -53,14 +53,17 @@ I operate like a manager even when the title isn't explicit: I translate ambigui
 Operating at the intersection of data reliability and mission-critical operations, focusing on pipelines and systems where correctness, security, and repeatability matter.
 
 **Technical Focus**
-- Cloud data systems on **AWS**: warehousing, secure access design, operational automation.
-- Data quality and trust: validation gates, reconciliation logic, systematic error detection.
-- Engineering robustness: diagnostics for distributed tasks, instrumentation, rapid triage.
+- Cloud data systems on **AWS** (Redshift, Lambda): warehousing, secure access design, operational automation.
+- Data quality and trust: validation gates (Great Expectations), reconciliation logic, systematic error detection.
+- Engineering robustness: diagnostics for distributed tasks (Python + C++), instrumentation, rapid triage.
 
 **Key Contributions**
-- 🏛️ **Governed pipeline architecture** — Designed warehouse and pipeline patterns with clear inputs/outputs, stable schemas, and strict permission boundaries. Prioritized secure-by-default designs: least-privilege access, traceable execution, auditable flows.
-- ✅ **Data quality as a system** — Implemented validation logic and discrepancy detection to prevent silent failures. Built repeatable reconciliation checks for downstream consumer trust without manual verification loops.
-- 🚦 **Operational readiness** — Developed automated diagnostics and reliability checks (Python + C++) to reduce time-to-detect and time-to-recover. Designed workflows that anticipate failure modes (partial loads, schema drift, missing partitions, delayed upstream jobs).
+- 🏛️ **Governed pipeline architecture** — Designed Airflow- and dbt-orchestrated warehouse pipelines with clear inputs/outputs, stable SQL schemas, and strict IAM permission boundaries. Prioritized secure-by-default designs: OAuth/SAML-enforced access, traceable execution, auditable flows.
+- ✅ **Data quality as a system** — Implemented Great Expectations validation and discrepancy detection to prevent silent failures. Built repeatable reconciliation checks so downstream consumers trust the dataset without manual verification loops.
+- 🚦 **Operational readiness** — Developed automated diagnostics (Python + C++) with PyTest/UnitTest coverage to reduce time-to-detect and time-to-recover. Containerized services with Docker; designed CI/CD pipeline workflows that anticipate failure modes (partial loads, schema drift, missing partitions, delayed upstream jobs).
+- 🔗 **API-driven integrations** — Exposed pipeline health and data-quality endpoints via FastAPI-based RESTful APIs consumed by downstream monitoring dashboards.
+
+`Python` `C++` `SQL` `FastAPI` `RESTful APIs` `AWS Redshift` `AWS Lambda` `Airflow` `dbt` `Great Expectations` `PyTest` `UnitTest` `Docker` `CI/CD` `Git` `OAuth` `IAM` `Data Governance`
 
 ---
 
@@ -70,9 +73,11 @@ Operating at the intersection of data reliability and mission-critical operation
 A hybrid role combining analytics, performance strategy, forecasting, and operational execution with direct impact on business outcomes.
 
 **Key Contributions**
-- 📊 **KPI ownership** — Managed performance analytics across editorial, product, growth, and operations stakeholders. Translated metrics into action: not "what happened," but "what to do next."
-- 📈 **Forecasting & planning** — Built forecasting models and scenario planning frameworks for quarterly planning. Set measurable guardrails: target setting, risk ranges, resource allocation logic.
-- ⚙️ **Automation mindset** — Automated recurring analysis and reporting workflows to reduce manual cycles and improve consistency.
+- 📊 **KPI ownership** — Managed performance analytics across editorial, product, growth, and operations stakeholders using Power BI, Tableau, and Google Analytics dashboards. Translated metrics into action: not "what happened," but "what to do next."
+- 📈 **Forecasting & planning** — Built time-series forecasting models (Python · Pandas · NumPy · SciPy) and scenario planning frameworks for quarterly planning. Applied statistical modeling and causal inference to set measurable guardrails: target setting, risk ranges, resource allocation logic.
+- ⚙️ **Automation mindset** — Automated recurring analysis and reporting workflows (Python + SQL) to reduce manual cycles, improve consistency, and surface insights via D3.js-powered interactive reports.
+
+`Python` `SQL` `Pandas` `NumPy` `SciPy` `Power BI` `Tableau` `Google Analytics` `D3.js` `Time-Series Forecasting` `Statistical Modeling` `Causal Inference`
 
 ---
 
@@ -81,9 +86,11 @@ A hybrid role combining analytics, performance strategy, forecasting, and operat
 
 High-quality prompt tasks supporting SFT and RLHF workflows, strengthening intuition for model behavior under ambiguity and failure patterns (hallucination, instruction drift).
 
-- Produced high volumes of prompt tasks with consistent structure, clarity, and evaluability.
-- Treated prompts like interfaces: inputs, constraints, expected outputs, and test cases.
-- Designed tasks to surface edge cases and reasoning breakdowns, not just happy-path outputs.
+- Produced high volumes of prompt tasks with consistent structure, clarity, and evaluability using OpenAI models and LangChain-based evaluation pipelines.
+- Treated prompts like interfaces: inputs, constraints, expected outputs, and test cases — applying Ragas-style evaluation criteria to measure response quality and alignment.
+- Designed tasks to surface edge cases and reasoning breakdowns, not just happy-path outputs; contributed to prompt & context management frameworks for multi-turn reliability.
+
+`OpenAI Models` `Prompt & Context Management` `RLHF` `SFT` `LangChain` `Ragas` `Python`
 
 ---
 
@@ -93,9 +100,12 @@ High-quality prompt tasks supporting SFT and RLHF workflows, strengthening intui
 Applied ML systems combining structured + unstructured data pipelines, model training/tuning, evaluation and iteration cycles, and integration into product workflows.
 
 **Key Contributions**
-- 🔍 **Retrieval/ranking improvements (BERT)** — Tuned and evaluated retrieval/ranking behavior systematically: isolate error types, target data quality, validate metrics after each change.
-- 🔄 **ETL pipelines for ML workloads** — Built scalable data pipelines for unstructured processing, reducing latency and improving throughput to keep model data fresh and production-ready.
-- 🎯 **Recommendation / skill-gap systems** — Designed systems mapping user behavior → needs → recommended learning content, focused on actionable signals over vanity metrics.
+- 🔍 **Retrieval/ranking improvements (BERT + Transformers)** — Fine-tuned Hugging Face Transformer models for relevance ranking; applied NLTK and spaCy for text preprocessing. Improved retrieval quality systematically: isolate error types, target data quality, validate metrics (Ragas/custom harnesses) after each change.
+- 🔄 **ETL/ELT pipelines for ML workloads** — Built scalable Python + Apache Spark pipelines ingesting from PostgreSQL/MySQL and MongoDB, reducing latency and improving throughput to keep model data fresh and production-ready. Exposed processed data through FastAPI RESTful APIs.
+- 🎯 **Recommendation / skill-gap systems** — Designed RAG-enhanced recommendation systems using LangChain and vector databases (Pinecone) mapping user behavior → needs → learning content, focused on actionable signals over vanity metrics.
+- 🐳 **Production integration** — Packaged models with Docker, tracked experiments with MLflow, and deployed via microservices architecture on Kubernetes with CI/CD pipelines.
+
+`Python` `PyTorch` `TensorFlow` `Keras` `scikit-learn` `XGBoost` `Hugging Face` `BERT` `Transformers` `LangChain` `RAG` `Pinecone` `NLTK` `spaCy` `FastAPI` `RESTful APIs` `Microservices` `PostgreSQL` `MySQL` `MongoDB` `Apache Spark` `ETL/ELT` `Docker` `Kubernetes` `MLflow` `CI/CD`
 
 ---
 
@@ -124,9 +134,11 @@ A policy-driven cognitive memory layer for LLM agents that replaces naïve retri
 - **Retrieval auction concept** — Memory items compete for inclusion via a mathematically grounded scoring function with explicit budget constraints (token limits treated like compute limits).
 - **Lifecycle memory engine** — Dynamic store where items decay, consolidate, get suppressed (noise), or promoted (consistent contributors).
 
-**Evaluation philosophy** — measure token efficiency vs. task performance, identify failure modes (forgetting, repetition, drift, contradiction), stress-test under perturbations, test multi-step coherence and tool-use reliability.
+**Evaluation philosophy** — measure token efficiency vs. task performance using Ragas-style harnesses; identify failure modes (forgetting, repetition, drift, contradiction); stress-test under perturbations; test multi-step coherence and tool-use reliability.
 
 **AGI relevance** — long-horizon reasoning requires memory that is controlled, auditable, and useful. Agents need policies—not heuristics—for recall. Scalable intelligence is fundamentally a resource allocation problem.
+
+`Python` `LangChain` `LangGraph` `OpenAI Models` `Hugging Face` `Transformers` `RAG` `Pinecone` `LanceDB` `Ragas` `n8n` `MLflow` `Vector Databases` `Prompt & Context Management`
 
 ---
 
@@ -135,11 +147,13 @@ A policy-driven cognitive memory layer for LLM agents that replaces naïve retri
 ### High-Performance Video Prediction & Profiling Benchmark
 **Arizona State University (ASU) · Jun 2024 – Present**
 
-- Implemented a transformer-based forecasting approach inspired by iVideoGPT for 20+ frame prediction.
-- Developed a modular evaluation and profiling framework measuring temporal coherence, error accumulation over rollouts, and system performance constraints.
-- **Robustness testing** — Evaluated model stability through causal-style interventions (shift, removal, duplication) to test whether learned representations are stable or brittle.
+- Implemented a transformer-based forecasting approach (PyTorch + Hugging Face) inspired by iVideoGPT for 20+ frame prediction, with OpenCV-based frame preprocessing.
+- Developed a modular evaluation and profiling framework (NumPy · SciPy · Pandas · Matplotlib) measuring temporal coherence, error accumulation over rollouts, and system performance constraints.
+- **Robustness testing** — Evaluated model stability through causal-inference-style interventions (shift, removal, duplication) to test whether learned representations are stable or brittle.
 
 > Real systems must tolerate distribution shifts, missing inputs, and inconsistent streams — not just work on a dataset.
+
+`Python` `PyTorch` `TensorFlow` `Keras` `Hugging Face` `Transformers` `OpenCV` `NumPy` `SciPy` `Pandas` `Matplotlib` `Causal Inference`
 
 ---
 
@@ -147,62 +161,106 @@ A policy-driven cognitive memory layer for LLM agents that replaces naïve retri
 
 ### Multimodal AI-Based Workload Relocation Strategy for Reducing Carbon Emissions in Multi-Cloud Environments
 
-**IEEE Xplore · 2025** — 2nd ICECONF (International Conference on AI and Knowledge Discovery in Concurrent Engineering)
+> G. Venugopal, P. K. Badiga, **L. S. Kumar** and R. R. Datpally, "Multimodal AI-Based Workload Relocation Strategy for Reducing Carbon Emissions in Multi-Cloud Environments," *2025 2nd International Conference on Artificial Intelligence and Knowledge Discovery in Concurrent Engineering (ICECONF)*, Chennai, India, 2025, pp. 1–6, doi: [10.1109/ICECONF65644.2025.11379581](https://doi.org/10.1109/ICECONF65644.2025.11379581)
 
-**Problem** — Multi-cloud workloads are scheduled for cost/performance, rarely for sustainability.
+**IEEE Xplore · 2025** — 2nd ICECONF, Chennai, India
+
+**Keywords:** Multimodal AI · workload relocation · carbon emissions · multi-cloud environments · reinforcement learning · deep learning · energy efficiency · PyTorch · Hugging Face Transformers · Ray RLlib
+
+**Problem** — Multi-cloud workloads are scheduled for cost/performance, rarely for sustainability. Carbon intensity varies significantly across cloud regions and time, yet schedulers ignore it.
 
 **Contribution** — A multimodal framework combining:
-- RL (Ray RLlib)
-- Deep Learning (PyTorch)
-- Transformers (Hugging Face)
+- 🤖 **RL policy** (Ray RLlib) for adaptive workload placement decisions
+- 🧠 **LSTM forecasting** for predicting carbon intensity and energy consumption across cloud regions
+- 🔄 **Transformer forecasting** (Hugging Face) for real-time workload demand modeling
+- 📡 **Real-time API data ingestion** — live carbon intensity and energy monitoring streams
+- 🧹 **Dataset preprocessing** — cleaning, standardization, and normalization pipelines (PyTorch + Pandas)
+- ⚖️ **Constraint-based optimization** — balancing performance SLAs against environmental targets
 
 …to relocate workloads intelligently across clouds, reducing carbon emissions while maintaining efficiency.
 
-**Outcome** — Demonstrated reduced carbon emissions and improved energy efficiency through policy-driven relocation decisions.
+**Outcome** — Demonstrated measurable reduction in carbon emissions and improved energy efficiency through carbon-intensity-driven, policy-based relocation decisions.
+
+`Ray RLlib` `PyTorch` `Hugging Face Transformers` `LSTM` `Carbon-aware scheduling` `Energy consumption modeling` `Constraint-based optimization` `Real-time API ingestion` `Pandas` `Python`
 
 ---
 
 ## 🛠️ Technical Skills
 
-### Languages
+### 🐍 Backend & Core Programming
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-### Data Engineering
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
+Python (Django · FastAPI · Flask) · SQL · C++ · C · Java · RESTful APIs · Microservices Architecture
 
-Data warehousing · Dimensional modeling · Schema design · ETL/ELT · Data quality frameworks (Great Expectations) · Observability · Reconciliation logic · API-driven pipelines · Batch + streaming patterns
+---
 
-### Cloud & DevOps
+### 🤖 Production AI & LLM Systems
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+OpenAI Models · Prompt & Context Management · RAG · LangChain · LangGraph · Hugging Face · Transformers · RLHF · SFT · Ragas · n8n · Vector Databases (Pinecone · LanceDB)
+
+---
+
+### 🗄️ Databases & Data Modeling
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+Relational Databases (PostgreSQL · MySQL) · Advanced Data Modeling (Indexing · Foreign Keys) · Schema Design · MongoDB · ETL/ELT Pipelines
+
+---
+
+### ☁️ Cloud Infrastructure & DevOps
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)
 
-AWS: Redshift · Lambda · IAM · GCP: BigQuery · Composer · CI/CD · Git workflows
+AWS (Redshift · Lambda) · GCP (BigQuery · Composer) · Docker · Kubernetes · Terraform · Apache Spark · Kafka · Hadoop · Databricks · Snowflake · dbt · SQLMesh · Airflow
 
-### AI / ML / LLM Systems
+---
+
+### 🔒 Engineering Excellence & Security
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+
+CI/CD Pipelines · Git · Automated Testing (PyTest · UnitTest) · Data Quality (Great Expectations) · Data Governance · MLflow · OAuth · SAML · Wireshark · Network Protocols (RTP · SIP · WebRTC)
+
+---
+
+### 📊 Machine Learning & Quantitative Analytics
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-
-Transformers · LangGraph · RAG · Fine-tuning · Evaluation harnesses · RLHF · SFT · XGBoost · Keras · Vector DBs (Pinecone, LanceDB) · MLflow · Ray (RLlib)
-
-### Analytics & Visualization
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 
-Forecasting · KPI frameworks · Stakeholder reporting systems
+PyTorch · TensorFlow · Keras · scikit-learn · XGBoost · OpenCV · NLTK · spaCy · Librosa · Pandas · NumPy · SciPy · Power BI · Tableau · Google Analytics · D3.js · Time-Series Forecasting · Causal Inference · Statistical Modeling
+
+---
+
+### 🌱 Sustainable AI Systems & Multi-Cloud Optimization
+*(From IEEE publication — ICECONF 2025)*
+
+Carbon-aware workload relocation · Energy consumption modeling · Carbon intensity–driven scheduling · Hybrid RL + DL framework (Ray RLlib + PyTorch) · LSTM forecasting · Hugging Face Transformer forecasting · Real-time monitoring data ingestion via APIs · Dataset preprocessing (cleaning + standardization) · Constraint-based optimization (performance + environmental)
 
 ---
 
