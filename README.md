@@ -39,9 +39,9 @@ I operate like a manager even when the title isn't explicit: I translate ambigui
 
 ### Core Interests
 
-- 🤖 **AGI** — memory, reasoning stability, alignment, long-horizon planning, tool use, and constraint-aware intelligence.
-- 🧠 **Agent systems** — memory architectures, retrieval policies, evaluation harnesses, controllability.
-- 🔀 **AI + Data engineering convergence** — stacks where pipelines feed models and models drive products with measurable reliability.
+- 🤖 **AGI Foundations** — Practical building blocks for general-purpose intelligence: memory, reasoning stability, alignment, long-horizon planning, tool use, and resource-aware decision-making (latency, cost, context limits).
+- 🧠 **Agentic LLM Systems** — Memory architectures, retrieval policies, evaluation harnesses, and controllability for multi-step agents that stay consistent, grounded, and auditable.
+- 🔀 **AI × Data Engineering** — Production stacks where pipelines feed models and models drive products—with strong data quality, observability, and measurable reliability end-to-end.
 
 ---
 
@@ -63,6 +63,9 @@ Operating at the intersection of data reliability and mission-critical operation
 - 🚦 **Operational readiness** — Developed automated diagnostics (Python + C++) with PyTest/UnitTest coverage to reduce time-to-detect and time-to-recover. Containerized services with Docker; designed CI/CD pipeline workflows that anticipate failure modes (partial loads, schema drift, missing partitions, delayed upstream jobs).
 - 🔗 **API-driven integrations** — Exposed pipeline health and data-quality endpoints via FastAPI-based RESTful APIs consumed by downstream monitoring dashboards.
 
+**Key Soft Skills**
+> 🗣️ **Stakeholder communication** — Translated complex data failures and pipeline behavior into plain language for non-technical partners and research leads. &nbsp;|&nbsp; 🎯 **Ownership & accountability** — End-to-end responsibility from design to on-call reliability with no handoff gaps. &nbsp;|&nbsp; 🧩 **Problem-solving under ambiguity** — Diagnosed undocumented systems and missing data contracts from scratch; built clarity before building solutions. &nbsp;|&nbsp; 🔬 **Attention to detail** — Zero-tolerance approach to silent data failures: validation-first design as a habit, not a checklist.
+
 `Python` `C++` `SQL` `FastAPI` `RESTful APIs` `AWS Redshift` `AWS Lambda` `Airflow` `dbt` `Great Expectations` `PyTest` `UnitTest` `Docker` `CI/CD` `Git` `OAuth` `IAM` `Data Governance`
 
 ---
@@ -77,6 +80,9 @@ A hybrid role combining analytics, performance strategy, forecasting, and operat
 - 📈 **Forecasting & planning** — Built time-series forecasting models (Python · Pandas · NumPy · SciPy) and scenario planning frameworks for quarterly planning. Applied statistical modeling and causal inference to set measurable guardrails: target setting, risk ranges, resource allocation logic.
 - ⚙️ **Automation mindset** — Automated recurring analysis and reporting workflows (Python + SQL) to reduce manual cycles, improve consistency, and surface insights via D3.js-powered interactive reports.
 
+**Key Soft Skills**
+> 📢 **Data storytelling** — Turned raw metrics into narratives that moved editorial and business decisions, not just filled dashboards. &nbsp;|&nbsp; 🤝 **Cross-functional influence** — Collaborated with editorial, product, and growth teams without formal authority; built buy-in through data credibility. &nbsp;|&nbsp; 🧠 **Strategic thinking** — Connected weekly KPIs to quarterly business outcomes and surfaced trends before they became problems. &nbsp;|&nbsp; ⏱️ **Deadline-driven execution** — Delivered consistent reporting cycles in a fast-paced, high-volume sports media environment.
+
 `Python` `SQL` `Pandas` `NumPy` `SciPy` `Power BI` `Tableau` `Google Analytics` `D3.js` `Time-Series Forecasting` `Statistical Modeling` `Causal Inference`
 
 ---
@@ -90,20 +96,26 @@ High-quality prompt tasks supporting SFT and RLHF workflows, strengthening intui
 - Treated prompts like interfaces: inputs, constraints, expected outputs, and test cases — applying Ragas-style evaluation criteria to measure response quality and alignment.
 - Designed tasks to surface edge cases and reasoning breakdowns, not just happy-path outputs; contributed to prompt & context management frameworks for multi-turn reliability.
 
+**Key Soft Skills**
+> 🔍 **Critical & adversarial thinking** — Actively sought failure modes, edge cases, and subtle misalignments rather than accepting plausible-sounding outputs. &nbsp;|&nbsp; 📐 **Precision & consistency** — Maintained uniform task structure across high-volume output under time pressure. &nbsp;|&nbsp; 🕰️ **Async self-management** — Delivered independently without oversight in a fully remote freelance context. &nbsp;|&nbsp; 💡 **AI product intuition** — Developed deep sensitivity to how model behavior shifts with instruction phrasing, context length, and ambiguity.
+
 `OpenAI Models` `Prompt & Context Management` `RLHF` `SFT` `LangChain` `Ragas` `Python`
 
 ---
 
-### Machine Learning Engineer — Uniqlabs (Develup), Bangalore
+### First ML/AI Engineer — Uniqlabs (Develup), Bangalore
 **Sep 2021 – Nov 2023**
 
-Applied ML systems combining structured + unstructured data pipelines, model training/tuning, evaluation and iteration cycles, and integration into product workflows.
+Joined as the **first (founding) ML/AI engineer** to build the AI layer of an early-stage, AI-powered job portal — a platform comparable in mission to what Jobright and Simplify (AI-powered job matching and application platforms) are today. Designed and shipped models and intelligent systems from scratch: no existing ML codebase, no prior AI team, greenfield from day one.
 
 **Key Contributions**
-- 🔍 **Retrieval/ranking improvements (BERT + Transformers)** — Fine-tuned Hugging Face Transformer models for relevance ranking; applied NLTK and spaCy for text preprocessing. Improved retrieval quality systematically: isolate error types, target data quality, validate metrics (Ragas/custom harnesses) after each change.
+- 🔍 **Retrieval/ranking improvements (BERT + Transformers)** — Fine-tuned Hugging Face Transformer models for job-candidate relevance ranking; applied NLTK and spaCy for text preprocessing. Improved retrieval quality systematically: isolate error types, target data quality, validate metrics (Ragas/custom harnesses) after each change.
 - 🔄 **ETL/ELT pipelines for ML workloads** — Built scalable Python + Apache Spark pipelines ingesting from PostgreSQL/MySQL and MongoDB, reducing latency and improving throughput to keep model data fresh and production-ready. Exposed processed data through FastAPI RESTful APIs.
-- 🎯 **Recommendation / skill-gap systems** — Designed RAG-enhanced recommendation systems using LangChain and vector databases (Pinecone) mapping user behavior → needs → learning content, focused on actionable signals over vanity metrics.
+- 🎯 **Recommendation / skill-gap systems** — Designed RAG-enhanced job recommendation and skill-gap analysis systems using LangChain and vector databases (Pinecone), mapping user profiles → role requirements → personalized learning paths; focused on actionable signals over vanity metrics.
 - 🐳 **Production integration** — Packaged models with Docker, tracked experiments with MLflow, and deployed via microservices architecture on Kubernetes with CI/CD pipelines.
+
+**Key Soft Skills**
+> 🏗️ **Founding team mindset** — Built from zero with minimal resources: made early architectural decisions that shaped the product's AI trajectory. &nbsp;|&nbsp; 🚀 **Builder's autonomy** — Owned the full ML lifecycle — problem framing, data, modeling, evaluation, deployment — without a team to delegate to. &nbsp;|&nbsp; 🤝 **Cross-functional collaboration** — Partnered directly with product, design, and engineering to translate user needs into model behavior and measurable product outcomes. &nbsp;|&nbsp; 📣 **Technical leadership** — Communicated model limitations, tradeoffs, and roadmap priorities to non-technical founders and stakeholders.
 
 `Python` `PyTorch` `TensorFlow` `Keras` `scikit-learn` `XGBoost` `Hugging Face` `BERT` `Transformers` `LangChain` `RAG` `Pinecone` `NLTK` `spaCy` `FastAPI` `RESTful APIs` `Microservices` `PostgreSQL` `MySQL` `MongoDB` `Apache Spark` `ETL/ELT` `Docker` `Kubernetes` `MLflow` `CI/CD`
 
