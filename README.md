@@ -109,9 +109,9 @@ High-quality prompt tasks supporting SFT and RLHF workflows, strengthening intui
 Joined as the **first (founding) ML/AI engineer** to build the AI layer of an early-stage, AI-powered job portal — a platform comparable in mission to what Jobright and Simplify (AI-powered job matching and application platforms) are today. Designed and shipped models and intelligent systems from scratch: no existing ML codebase, no prior AI team, greenfield from day one.
 
 **Key Contributions**
-- 🔍 **Retrieval/ranking improvements (BERT + Transformers)** — Fine-tuned Hugging Face Transformer models for job-candidate relevance ranking; applied NLTK and spaCy for text preprocessing. Improved retrieval quality systematically: isolate error types, target data quality, validate metrics (Ragas/custom harnesses) after each change.
+- 🔍 **Retrieval/ranking improvements (BERT + Transformers)** — Fine-tuned Hugging Face Transformer models (PyTorch · TensorFlow · Keras) for job-candidate relevance ranking; applied NLTK and spaCy for text preprocessing. Improved retrieval quality systematically: isolate error types, target data quality, validate metrics (Ragas/custom harnesses) after each change.
 - 🔄 **ETL/ELT pipelines for ML workloads** — Built scalable Python + Apache Spark pipelines ingesting from PostgreSQL/MySQL and MongoDB, reducing latency and improving throughput to keep model data fresh and production-ready. Exposed processed data through FastAPI RESTful APIs.
-- 🎯 **Recommendation / skill-gap systems** — Designed RAG-enhanced job recommendation and skill-gap analysis systems using LangChain and vector databases (Pinecone), mapping user profiles → role requirements → personalized learning paths; focused on actionable signals over vanity metrics.
+- 🎯 **Recommendation / skill-gap systems** — Designed RAG-enhanced job recommendation and skill-gap analysis systems using LangChain and vector databases (Pinecone), mapping user profiles → role requirements → personalized learning paths. Applied scikit-learn and XGBoost for feature-based baseline classifiers and ranking models; focused on actionable signals over vanity metrics.
 - 🐳 **Production integration** — Packaged models with Docker, tracked experiments with MLflow, and deployed via microservices architecture on Kubernetes with CI/CD pipelines.
 
 **Key Soft Skills**
@@ -147,7 +147,7 @@ Joined as the **first (founding) ML/AI engineer** to build the AI layer of an ea
 
 - **Governance-first memory** — Explicit, configurable policies govern every stage of the memory lifecycle: write, store, decay, consolidate, retrieve, and resolve. No implicit "just embed and retrieve."
 - **Contradiction handling** — Conflicting facts are detected via semantic similarity + logical consistency checks and resolved (most recent / highest trust wins) before context assembly, preventing the agent from hallucinating averaged facts.
-- **Benefit-per-token budgeting** — At runtime, the system ranks policy-eligible memory items by expected task contribution divided by token cost, packs the context window to the hard limit, compresses when needed, and logs every decision for transparency and debugging.
+- **Benefit-per-token budgeting** — At runtime, the system ranks policy-eligible memory items by expected task contribution divided by token cost, packs the context window to the hard limit, compresses when needed, and logs every decision for transparency and debugging. Vector stores (Pinecone · LanceDB) back the retrieval layer; n8n orchestrates automated workflow triggers and external system integrations.
 - **Provenance & auditability** — Every stored item carries metadata (source, timestamp, trust score, sensitivity). Every memory action—write, decay, eviction, retrieval—is logged, making agent behavior inspectable and debuggable.
 - **Compliance-ready** — Deletion cascades propagate right-to-be-forgotten requests across the memory store. Write-time rules block toxic content and prompt-injection patterns from entering memory at all.
 
@@ -183,7 +183,7 @@ Joined as the **first (founding) ML/AI engineer** to build the AI layer of an ea
 
 > Real systems must tolerate distribution shifts, missing inputs, and inconsistent streams — not just work on a dataset.
 
-`Python` `PyTorch` `TensorFlow` `Keras` `Hugging Face` `Transformers` `OpenCV` `NumPy` `SciPy` `Pandas` `Matplotlib` `Causal Inference`
+`Python` `PyTorch` `Hugging Face` `Transformers` `OpenCV` `NumPy` `SciPy` `Pandas` `Matplotlib` `Causal Inference`
 
 ---
 
