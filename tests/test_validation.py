@@ -1,23 +1,22 @@
 import pytest
 
-from q20 import solve
+from q01 import solve
 
 # List of test cases in the form [(input, output)]
-# Ideally there should be 10 test cases
 TEST_CASES = [
-    (2187, True),      # 27 * 81 = 2187
-    (126, False),      # odd number of digits
-    (1122, False),     # even digits but no valid fangs
-    (536539, True),    # 953 * 563 = 536539
-    (125460, True),    # 204 * 615 = 125460
-    (1260, True),      # 21 * 60 = 1260
-    (6880, True),      # 80 * 86 = 6880
-    (100, False),      # odd number of digits
-    (1000, False),     # only fang pairs both end with 0
-    (9999, False),     # 99 * 99 = 9801 ≠ 9999
+    ("0. pop 0", "1 imix 0"),
+    ("10. zac 0", "3 chuen 0"),
+    ("10. zac 1995", "9 cimi 2801"),
+    ("19. cumhu 0", "9 ahau 1"),      # last day before uayet
+    ("4. uayet 0", "1 chicchan 1"),   # last valid day of uayet
+    ("0. pop 4999", "8 cib 7017"),    # max valid year
+    ("5. uayet 0", ""),               # impossible: uayet only has days 0-4
+    ("20. pop 0", ""),                # impossible: regular month max day is 19
+    ("0. pop 5000", ""),              # year >= 5000
+    ("0. pop -1", ""),                # negative year
 ]
 
 
-@pytest.mark.parametrize("number,expected", TEST_CASES)
-def test_validation(number, expected):
-    assert solve(number) == expected
+@pytest.mark.parametrize("input,expected", TEST_CASES)
+def test_solver(input, expected):
+    assert solve(input) == expected
