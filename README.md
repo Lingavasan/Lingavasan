@@ -2,9 +2,9 @@
 
 # Lingavasan Suresh Kumar
 
-### Software Engineer · Data Engineer · AI/ML Systems · LLM Infrastructure · Open Source
+### Software Engineer · AI Engineer · ML Acceleration · Data Systems · Open Source
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=820&lines=Building+reliable+software%2C+data%2C+and+AI+systems;Open-source+fixes+in+SDKs%2C+ML+infra%2C+and+systems+tools;Engineering+discipline+meets+research+curiosity)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=860&lines=Building+reliable+software%2C+data%2C+and+AI+systems;CUDA+kernels+%7C+LLM+systems+%7C+production+ML+infrastructure;Open-source+fixes+in+SDKs%2C+ML+infra%2C+and+systems+tools)](https://git.io/typing-svg)
 
 📍 Tempe, AZ &nbsp;|&nbsp; 📧 [lsuresh4@asu.edu](mailto:lsuresh4@asu.edu) &nbsp;|&nbsp; 🌐 United States
 
@@ -20,11 +20,12 @@
 
 I build reliable software, data, and AI systems that hold up when the environment is messy: incomplete inputs, shifting requirements, compute budgets, latency targets, and stakeholders who need clarity, not complexity.
 
-My profile is intentionally broad but not scattered. The same core story supports software engineering, infrastructure, data engineering, ML/LLM, and AI systems resumes:
+My profile is intentionally broad but not scattered. The same core story supports software engineering, infrastructure, data engineering, AI engineering, ML acceleration, LLM systems, and research resumes:
 
 - 🏗️ **Engineering discipline** — clean interfaces, tests, CI/CD, observability, reproducibility, and maintainable code.
 - 🔬 **Research curiosity** — LLM memory, evaluation, retrieval, ranking, long-horizon behavior, and system reliability.
 - 🛠️ **Production ownership** — pipelines, APIs, containers, cloud infrastructure, validation gates, and operational diagnostics.
+- ⚡ **Performance engineering** — CUDA kernels, C++ inference paths, GPU memory optimization, profiling, and low-latency serving.
 - 🤝 **Open-source mindset** — small useful fixes, regression coverage, reviewer-friendly validation notes, and durable documentation.
 
 ### What I Optimize For
@@ -64,7 +65,8 @@ This profile is designed to stay aligned even when the resume is tailored for a 
 | **Software Engineer** | Backend systems, APIs, testing, CI/CD, code quality, open-source fixes, production ownership |
 | **Infrastructure / DevOps** | Docker, Linux, orchestration, automation, reliability, cloud-native deployment, IaC-style delivery |
 | **Data Engineer** | Pipelines, warehouses, validation gates, Airflow/dbt-style orchestration, analytics systems |
-| **ML / LLM Engineer** | Retrieval/ranking, model services, evaluation harnesses, prompt/context systems, ML pipelines |
+| **AI / LLM Engineer** | RAG, agentic workflows, fine-tuning, prompt/context systems, evaluation harnesses, model reliability |
+| **ML Acceleration Engineer** | CUDA kernels, GPU memory optimization, C++ inference, profiling, Python-to-C++ integration |
 | **Research / AI Systems** | Memory governance, long-horizon agents, evaluation methodology, reproducibility, publications |
 
 ---
@@ -95,9 +97,11 @@ Joined as the first ML/AI engineer to build the AI layer of an early-stage job-m
 - 🔍 **Retrieval and ranking** — Fine-tuned Transformer/BERT-style models for job-candidate relevance and improved ranking quality through evaluation-driven iteration.
 - 🔄 **ML data pipelines** — Built Python/Spark ETL workflows across relational and document stores to keep model data fresh and production-ready.
 - 🎯 **Recommendation systems** — Built skill-gap and job recommendation systems using RAG-style retrieval, vector search, and feature-based ranking baselines.
-- 🐳 **Production integration** — Packaged models with Docker, tracked experiments with MLflow, and integrated services into CI/CD-backed deployments.
+- ⚡ **Inference acceleration** — Developed CUDA kernels and C++ preprocessing paths, profiled bottlenecks with NVIDIA tooling, and reduced inference latency from 250ms to 120ms.
+- 🧠 **Agentic and LLM systems** — Built RAG-style retrieval pipelines with LanceDB/Pinecone, experimented with prompt strategies, and tracked model behavior across evaluation workflows.
+- 🐳 **Production integration** — Packaged models with Docker, tracked 25+ model versions with MLflow, and integrated services into CI/CD-backed deployments.
 
-`Python` `PyTorch` `TensorFlow` `Keras` `scikit-learn` `XGBoost` `Hugging Face` `BERT` `LangChain` `RAG` `FastAPI` `Spark` `Docker` `Kubernetes` `MLflow`
+`Python` `C++` `CUDA` `PyTorch` `TensorFlow` `Keras` `scikit-learn` `XGBoost` `Hugging Face` `BERT` `LangChain` `RAG` `LanceDB` `Pinecone` `FastAPI` `Spark` `Docker` `Kubernetes` `MLflow` `pybind11`
 
 ---
 
@@ -120,7 +124,9 @@ Combined analytics, forecasting, automation, and stakeholder communication to tu
 
 Worked on prompt tasks and evaluation-style workflows for model behavior, instruction following, ambiguity handling, and consistency.
 
-`OpenAI Models` `Prompt Engineering` `Context Management` `RLHF` `SFT` `LangChain` `Ragas` `Python`
+**Focus areas:** chain-of-thought prompting, instruction tuning, RLHF/SFT workflows, large-scale evaluation tasks, statistical validation, model behavior analysis, and inference efficiency tradeoffs.
+
+`OpenAI Models` `Prompt Engineering` `Context Management` `Chain-of-Thought` `RLHF` `SFT` `LangChain` `Ragas` `Python`
 
 ---
 
@@ -184,7 +190,17 @@ Python · SQL · C/C++ · Java · Go · Rust · TypeScript · REST APIs · Micro
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 
-PyTorch · TensorFlow · Keras · scikit-learn · XGBoost · Transformers · RAG · LangChain · LangGraph · Prompt/context management · Evaluation harnesses
+PyTorch · TensorFlow · Keras · scikit-learn · XGBoost · Transformers · BERT · ONNX · RAG · LangChain · LangGraph · LlamaIndex · LanceDB · Pinecone · Prompt/context management · Fine-tuning strategy · Chain-of-thought prompting · Agentic workflows · Evaluation harnesses
+
+---
+
+### ⚡ ML Acceleration & GPU Systems
+![NVIDIA](https://img.shields.io/badge/NVIDIA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+CUDA kernel development · GPU memory optimization · CUDA stream management · custom neural network layers · C++ inference backends · low-latency model serving · tensor layout optimization · pre/post-processing acceleration · pybind11 · ctypes · GDB · Valgrind · nvprof · NVIDIA Nsight Systems
 
 ---
 
