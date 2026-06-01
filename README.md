@@ -18,25 +18,25 @@
 
 ## 🙋‍♂️ About
 
-I build production-focused software, data, and AI systems with an emphasis on reliability, performance, and clear engineering ownership. My work spans backend services, data infrastructure, ML systems, LLM workflows, and GPU-aware inference optimization.
+I build software, data, and AI systems for production environments. My work spans backend services, data infrastructure, ML systems, LLM workflows, and GPU-aware inference optimization.
 
-The common thread across my work is practical systems engineering: taking complex requirements, designing maintainable solutions, validating behavior, and shipping code that other engineers can trust.
+I focus on turning ambiguous requirements into maintainable systems: clear interfaces, tested behavior, practical documentation, and code that can be reviewed and extended by a team.
 
-- 🏗️ **Engineering discipline** — clean interfaces, tests, CI/CD, observability, reproducibility, and maintainable code.
-- 🔬 **Research curiosity** — LLM memory, evaluation, retrieval, ranking, long-horizon behavior, and system reliability.
-- 🛠️ **Production ownership** — pipelines, APIs, containers, cloud infrastructure, validation gates, and operational diagnostics.
+- 🏗️ **Engineering discipline** — clean interfaces, tests, CI/CD, observability, reproducibility, and code quality.
+- 🔬 **AI systems** — LLM memory, evaluation, retrieval, ranking, long-horizon behavior, and model reliability.
+- 🛠️ **Production systems** — pipelines, APIs, containers, cloud infrastructure, validation gates, and operational diagnostics.
 - ⚡ **Performance engineering** — CUDA kernels, C++ inference paths, GPU memory optimization, profiling, and low-latency serving.
 - 🤝 **Open-source mindset** — contributing useful fixes, thoughtful tests, and documentation that makes projects easier to maintain.
 
-### What I Optimize For
+### Engineering Principles
 
 | Focus | Practice |
 |---|---|
-| Clarity before execution | Problem framing, constraints, success metrics, decision boundaries |
-| Systems that scale | Reusable pipelines, typed interfaces, versioned data, automation over one-off scripts |
-| Reliability by design | Tests, quality gates, observability, failure-mode thinking, reproducible workflows |
-| Stakeholder trust | Turning technical details into decisions people can act on |
-| Long-term maintainability | Documentation, code review discipline, clear ownership, low-surprise interfaces |
+| Clear problem framing | Understand constraints, define expected behavior, and make tradeoffs explicit |
+| Maintainable systems | Prefer reusable pipelines, typed interfaces, versioned data, and automation |
+| Reliability | Use tests, validation gates, observability, and reproducible workflows |
+| Communication | Translate technical details into decisions, risks, and next steps |
+| Code quality | Keep changes reviewable, documented, and easy to extend |
 
 ---
 
@@ -52,13 +52,13 @@ Recent public contributions across SDKs, ML infrastructure, GPU/runtime tooling,
 | [microsoft/onnxruntime#28534](https://github.com/microsoft/onnxruntime/pull/28534) | Added WebGPU program reserve helpers and capacity hints to reduce reallocations. | 🔄 Open |
 | [llnl/RAJA#2032](https://github.com/llnl/RAJA/pull/2032) | Documented reducer helper utilities and validated the generated Sphinx docs. | 🔄 Open |
 
-> I contribute to open source where I can improve real developer workflows, whether that means a small bug fix, a performance improvement, stronger tests, or clearer documentation.
+> Open source is where I practice careful engineering in public: fixes, performance work, tests, and documentation that make a project easier to use and maintain.
 
 ---
 
 ## 🎯 Engineering Focus
 
-I work across several connected areas, with reliability and measurable impact as the baseline.
+My work sits across a few connected areas:
 
 | Area | Strengths |
 |---|---|
@@ -76,13 +76,13 @@ I work across several connected areas, with reliability and measurable impact as
 ### Data Engineer — Arizona State University (ASU), Tempe, AZ
 **Nov 2024 – Present**
 
-Operating at the intersection of data reliability, cloud infrastructure, and mission-critical operations, with a focus on pipelines and services where correctness, access control, and repeatability matter.
+Working on data reliability, cloud infrastructure, and operational tooling, with a focus on pipelines and services where correctness, access control, and repeatability matter.
 
 **Key Contributions**
 - 🏛️ **Governed data pipelines** — Built Airflow/dbt-style warehouse workflows with clear inputs/outputs, stable schemas, validation checks, and IAM-aware access boundaries.
 - ✅ **Data quality as a system** — Designed validation and reconciliation logic to catch silent failures before downstream consumers rely on bad data.
 - 🚦 **Operational diagnostics** — Developed Python/C++ diagnostics and test coverage to reduce time-to-detect and improve reliability of distributed processing tasks.
-- 🔗 **API-driven integrations** — Built FastAPI-style service surfaces for pipeline health, data quality, and operational visibility.
+- 🔗 **API-driven integrations** — Built FastAPI service surfaces for pipeline health, data quality, and operational visibility.
 
 `Python` `C++` `SQL` `FastAPI` `AWS` `Airflow` `dbt` `Great Expectations` `Docker` `CI/CD` `PyTest` `UnitTest` `IAM` `OAuth`
 
@@ -108,7 +108,7 @@ Joined as the first ML/AI engineer to build the AI layer of an early-stage job-m
 ### Assistant Content & SEO Manager — Sportskeeda
 **Dec 2023 – Jul 2024**
 
-Combined analytics, forecasting, automation, and stakeholder communication to turn performance data into operational decisions.
+Combined analytics, forecasting, automation, and reporting to support editorial and product decisions.
 
 **Key Contributions**
 - 📊 **KPI ownership** — Built dashboards and reporting workflows across editorial, product, growth, and operations stakeholders.
@@ -124,7 +124,7 @@ Combined analytics, forecasting, automation, and stakeholder communication to tu
 
 Worked on prompt tasks and evaluation-style workflows for model behavior, instruction following, ambiguity handling, and consistency.
 
-**Focus areas:** chain-of-thought prompting, instruction tuning, RLHF/SFT workflows, large-scale evaluation tasks, statistical validation, model behavior analysis, and inference efficiency tradeoffs.
+**Focus areas:** chain-of-thought prompting, instruction tuning, RLHF/SFT workflows, evaluation tasks, statistical validation, model behavior analysis, and inference efficiency tradeoffs.
 
 `OpenAI Models` `Prompt Engineering` `Context Management` `Chain-of-Thought` `RLHF` `SFT` `LangChain` `Ragas` `Python`
 
@@ -161,7 +161,7 @@ Worked on prompt tasks and evaluation-style workflows for model behavior, instru
 
 [DOI: 10.1109/ICECONF65644.2025.11379581](https://doi.org/10.1109/ICECONF65644.2025.11379581)
 
-Built around carbon-aware workload relocation in multi-cloud environments using reinforcement learning, forecasting, real-time API signals, and constraint-based optimization.
+Research on carbon-aware workload relocation in multi-cloud environments using reinforcement learning, forecasting, real-time API signals, and constraint-based optimization.
 
 `Ray RLlib` `PyTorch` `Hugging Face Transformers` `LSTM` `Carbon-Aware Scheduling` `Energy Modeling` `Pandas` `Python`
 
@@ -223,7 +223,7 @@ AWS · GCP · Docker · Kubernetes · Airflow · dbt-style workflows · Spark ·
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
 
-Automated testing · validation gates · MLflow · data quality checks · diagnostics · performance profiling · reproducible workflows · reviewer-friendly validation notes
+Automated testing · validation gates · MLflow · data quality checks · diagnostics · performance profiling · reproducible workflows · clear validation notes
 
 ---
 
@@ -232,7 +232,7 @@ Automated testing · validation gates · MLflow · data quality checks · diagno
 - 📝 **ICLR 2026 Reviewer** — technical review experience across modern AI research and evaluation methodology.
 - 🌱 **Published researcher** — carbon-aware multi-cloud workload relocation, sustainability, and AI-driven optimization.
 - 🤝 **Open-source contributor** — practical fixes and documentation improvements across production-grade repositories.
-- 🌐 **Cross-functional operator** — experience translating technical systems into stakeholder decisions.
+- 🌐 **Cross-functional work** — experience translating technical systems into decisions, risks, and implementation plans.
 
 ---
 
@@ -256,10 +256,10 @@ Automated testing · validation gates · MLflow · data quality checks · diagno
 
 ## ⚙️ How I Work
 
-> I build for **readability**, **reproducibility**, and **ownership**.
-> I treat quality as a product feature, not an afterthought.
-> I respect constraints: latency, budget, tokens, infrastructure, and people's attention.
-> I write documentation like someone will inherit my system tomorrow.
+> I value readable code, reproducible workflows, and clear ownership.
+> I treat tests and documentation as part of the product.
+> I pay attention to constraints: latency, cost, infrastructure, and maintainability.
+> I write with the next engineer in mind.
 
 ---
 
