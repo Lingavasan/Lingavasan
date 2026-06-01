@@ -18,15 +18,15 @@
 
 ## 🙋‍♂️ About
 
-I build reliable software, data, and AI systems that hold up when the environment is messy: incomplete inputs, shifting requirements, compute budgets, latency targets, and stakeholders who need clarity, not complexity.
+I build production-focused software, data, and AI systems with an emphasis on reliability, performance, and clear engineering ownership. My work spans backend services, data infrastructure, ML systems, LLM workflows, and GPU-aware inference optimization.
 
-My profile is intentionally broad but not scattered. The same core story supports software engineering, infrastructure, data engineering, AI engineering, ML acceleration, LLM systems, and research resumes:
+The common thread across my work is practical systems engineering: taking complex requirements, designing maintainable solutions, validating behavior, and shipping code that other engineers can trust.
 
 - 🏗️ **Engineering discipline** — clean interfaces, tests, CI/CD, observability, reproducibility, and maintainable code.
 - 🔬 **Research curiosity** — LLM memory, evaluation, retrieval, ranking, long-horizon behavior, and system reliability.
 - 🛠️ **Production ownership** — pipelines, APIs, containers, cloud infrastructure, validation gates, and operational diagnostics.
 - ⚡ **Performance engineering** — CUDA kernels, C++ inference paths, GPU memory optimization, profiling, and low-latency serving.
-- 🤝 **Open-source mindset** — small useful fixes, regression coverage, reviewer-friendly validation notes, and durable documentation.
+- 🤝 **Open-source mindset** — contributing useful fixes, thoughtful tests, and documentation that makes projects easier to maintain.
 
 ### What I Optimize For
 
@@ -52,15 +52,15 @@ Recent public contributions across SDKs, ML infrastructure, GPU/runtime tooling,
 | [microsoft/onnxruntime#28534](https://github.com/microsoft/onnxruntime/pull/28534) | Added WebGPU program reserve helpers and capacity hints to reduce reallocations. | 🔄 Open |
 | [llnl/RAJA#2032](https://github.com/llnl/RAJA/pull/2032) | Documented reducer helper utilities and validated the generated Sphinx docs. | 🔄 Open |
 
-> I like open-source work where the fix is small enough to review, useful enough to matter, and tested enough to trust.
+> I contribute to open source where I can improve real developer workflows, whether that means a small bug fix, a performance improvement, stronger tests, or clearer documentation.
 
 ---
 
-## 🎯 Resume Alignment Map
+## 🎯 Engineering Focus
 
-This profile is designed to stay aligned even when the resume is tailored for a specific role.
+I work across several connected areas, with reliability and measurable impact as the baseline.
 
-| Resume Direction | GitHub Profile Signal |
+| Area | Strengths |
 |---|---|
 | **Software Engineer** | Backend systems, APIs, testing, CI/CD, code quality, open-source fixes, production ownership |
 | **Infrastructure / DevOps** | Docker, Linux, orchestration, automation, reliability, cloud-native deployment, IaC-style delivery |
